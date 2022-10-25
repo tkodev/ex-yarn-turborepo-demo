@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "postinstall": "(cd ios && pod repo update && pod install)",
+    "android": "react-native run-android",
     "dev": "react-native run-ios",
     "build": "echo 'no build yet'",
     "start": "react-native start --reset-cache",

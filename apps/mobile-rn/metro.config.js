@@ -5,6 +5,13 @@
  * @format
  */
 
+const {resolve} = require('path');
+
+const rootPaths = [resolve(__dirname), resolve(__dirname, '../..')];
+const nodeModulesPaths = rootPaths.map(rootPath =>
+  resolve(rootPath, 'node_modules'),
+);
+
 module.exports = {
   transformer: {
     getTransformOptions: async () => ({
@@ -13,5 +20,9 @@ module.exports = {
         inlineRequires: true,
       },
     }),
+  },
+  watchFolders: rootPaths,
+  resolver: {
+    nodeModulesPaths: nodeModulesPaths,
   },
 };

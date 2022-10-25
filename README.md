@@ -42,3 +42,8 @@
   - Add your code
   - Run `yarn` in root directory to install deps
   - Add your new package to apps that need it using `yarn workspace @ex-turborepo-demo/<target> add @ex-turborepo-demo/utils`
+5. Add transpilation support for modules outside of app directories
+  - Despite workspace hoisting limits, local packages are stored as `symlinks` in `node_modules`.
+    - `next` and `react-native` doesn't transpile packages outside of their app dirs.
+  - Configure `web-next`'s `next.config.js` to watch and transpile specific modules in monorepo
+  - Configure `mobile-rn`'s `metro.config.js` to watch and transpile modules in monorepo

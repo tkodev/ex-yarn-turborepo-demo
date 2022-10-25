@@ -3,5 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 }
+const withTM = require('next-transpile-modules')(['@ex-turborepo-demo/utils'])
 
-module.exports = nextConfig
+module.exports = withTM(nextConfig)

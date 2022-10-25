@@ -1196,6 +1196,7 @@ __metadata:
     eslint: 8.26.0
     eslint-config-next: 13.0.0
     next: 13.0.0
+    next-transpile-modules: ^9.1.0
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 4.8.4
@@ -4033,6 +4034,16 @@ __metadata:
   dependencies:
     once: ^1.4.0
   checksum: 530a5a5a1e517e962854a31693dbb5c0b2fc40b46dad2a56a2deec656ca040631124f4795823acc68238147805f8b021abbe221f4afed5ef3c8e8efc2024908b
+  languageName: node
+  linkType: hard
+
+"enhanced-resolve@npm:^5.10.0":
+  version: 5.10.0
+  resolution: "enhanced-resolve@npm:5.10.0"
+  dependencies:
+    graceful-fs: ^4.2.4
+    tapable: ^2.2.0
+  checksum: 0bb9830704db271610f900e8d79d70a740ea16f251263362b0c91af545576d09fe50103496606c1300a05e588372d6f9780a9bc2e30ce8ef9b827ec8f44687ff
   languageName: node
   linkType: hard
 
@@ -7709,6 +7720,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-transpile-modules@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "next-transpile-modules@npm:9.1.0"
+  dependencies:
+    enhanced-resolve: ^5.10.0
+    escalade: ^3.1.1
+  checksum: 8cc46196db3c2d2063fb29fe5b4d03c21065ab08130085b24d61e4ed512d99c12083d28179771cf02f70f8bf5970db0781a228aacf6cc61662dbdcabaddfc472
+  languageName: node
+  linkType: hard
+
 "next@npm:13.0.0":
   version: 13.0.0
   resolution: "next@npm:13.0.0"
@@ -9828,6 +9849,13 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 5b07fe462ee03d2e1fac02cbb578efd2e0b55ac07e3d3db2e950aa9570ade5a4a2b8d3c15e9f25c89e4e50b646bc4269934601ee1eef4ca7968ad31960977690
+  languageName: node
+  linkType: hard
+
+"tapable@npm:^2.2.0":
+  version: 2.2.1
+  resolution: "tapable@npm:2.2.1"
+  checksum: 3b7a1b4d86fa940aad46d9e73d1e8739335efd4c48322cb37d073eb6f80f5281889bf0320c6d8ffcfa1a0dd5bfdbd0f9d037e252ef972aca595330538aac4d51
   languageName: node
   linkType: hard
 
