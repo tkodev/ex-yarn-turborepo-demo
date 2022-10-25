@@ -1,0 +1,11 @@
+{
+  "name": "@ex-turborepo-demo/root",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "yarn@3.2.4",
+  "workspaces": [
+    "apps/*",
+    "configs/*",
+    "packages/*"
+  ]
+}
