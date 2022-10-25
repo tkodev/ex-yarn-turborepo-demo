@@ -36,3 +36,9 @@
   - Add cocoapods install steps to `mobile-rn`'s `postinstall` script
   - Remove each app's `.git` folders using `rm -rf ./apps/*/.git` in root directory
   - Run `yarn` in root directory to install deps
+4. Add shared module
+  - Init a new yarn package in `packages/utils`
+  - Add `typescript@4.8.4` dev dep and a `tsconfig.json` for ts support, `web-next`'s is a good base
+  - Add your code
+  - Run `yarn` in root directory to install deps
+  - Add your new package to apps that need it using `yarn workspace @ex-turborepo-demo/<target> add @ex-turborepo-demo/utils`
