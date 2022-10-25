@@ -1,0 +1,27 @@
+{
+  "name": "@ex-turborepo-demo/mobile-expo",
+  "version": "0.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "dev": "expo start --ios --clear",
+    "build": "expo build:ios",
+    "start": "echo 'no start yet'",
+    "test": "echo 'no tests yet'",
+    "lint": "echo 'no lint yet'"
+  },
+  "dependencies": {
+    "expo": "~46.0.16",
+    "expo-status-bar": "~1.4.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.69.6",
+    "react-native-web": "~0.18.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/react": "~18.0.14",
+    "@types/react-native": "~0.69.1",
+    "typescript": "~4.3.5"
+  }
+}

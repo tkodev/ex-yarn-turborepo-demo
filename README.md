@@ -31,6 +31,7 @@
 3. Add apps
   - Add a typescript next.js app `(cd apps && npx create-next-app@latest --ts web-next)`
   - Add a typescript react native app `(cd apps && npx react-native init mobile-rn --template react-native-template-typescript)`
+  - Add a typescript expo app `(cd apps && npx create-expo-app -t expo-template-blank-typescript mobile-expo)`
   - Configure each app's `package.json` with `"version": "0.0.0"`, `"private": true`, and namespaced package `name: "@ex-turborepo-demo/..."`
   - Add common scripts to each app's `package.json`
   - Add cocoapods install steps to `mobile-rn`'s `postinstall` script
