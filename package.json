@@ -6,6 +6,7 @@
   "workspaces": [
     "apps/*",
     "configs/*",
+    "example/*",
     "packages/*"
   ],
   "scripts": {

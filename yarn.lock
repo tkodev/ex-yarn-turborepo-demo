@@ -1135,6 +1135,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ex-turborepo-demo/dep-1@workspace:^, @ex-turborepo-demo/dep-1@workspace:example/dep-1":
+  version: 0.0.0-use.local
+  resolution: "@ex-turborepo-demo/dep-1@workspace:example/dep-1"
+  dependencies:
+    "@ex-turborepo-demo/dep-2": "workspace:^"
+    typescript: 4.8.4
+  languageName: unknown
+  linkType: soft
+
+"@ex-turborepo-demo/dep-2@workspace:^, @ex-turborepo-demo/dep-2@workspace:example/dep-2":
+  version: 0.0.0-use.local
+  resolution: "@ex-turborepo-demo/dep-2@workspace:example/dep-2"
+  dependencies:
+    "@ex-turborepo-demo/dep-3": "workspace:^"
+    typescript: 4.8.4
+  languageName: unknown
+  linkType: soft
+
+"@ex-turborepo-demo/dep-3@workspace:^, @ex-turborepo-demo/dep-3@workspace:example/dep-3":
+  version: 0.0.0-use.local
+  resolution: "@ex-turborepo-demo/dep-3@workspace:example/dep-3"
+  dependencies:
+    typescript: 4.8.4
+  languageName: unknown
+  linkType: soft
+
 "@ex-turborepo-demo/example@workspace:packages/example":
   version: 0.0.0-use.local
   resolution: "@ex-turborepo-demo/example@workspace:packages/example"
@@ -1149,6 +1175,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.12.9
     "@babel/runtime": ^7.12.5
+    "@ex-turborepo-demo/dep-1": "workspace:^"
     "@ex-turborepo-demo/utils": "workspace:^"
     "@react-native-community/eslint-config": ^2.0.0
     "@tsconfig/react-native": ^2.0.2

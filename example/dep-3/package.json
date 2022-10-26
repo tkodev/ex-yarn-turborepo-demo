@@ -1,0 +1,12 @@
+{
+  "name": "@ex-turborepo-demo/dep-3",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "scripts": {
+    "build": "echo 'building dep-3'"
+  },
+  "devDependencies": {
+    "typescript": "4.8.4"
+  }
+}

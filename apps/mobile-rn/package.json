@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@ex-turborepo-demo/dep-1": "workspace:^",
     "@ex-turborepo-demo/utils": "workspace:^",
     "react": "18.1.0",
     "react-native": "0.70.3"
