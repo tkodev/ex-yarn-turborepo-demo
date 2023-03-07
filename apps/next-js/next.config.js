@@ -3,7 +3,9 @@
 const { dependencies } = require('./package.json')
 
 // init
-const transpilePackages = Object.keys(dependencies).filter((dependency) => dependency.includes('@quantummob/'))
+const transpilePackages = Object
+  .keys(dependencies)
+  .filter((dependency) => dependency.includes('@ex-yarn-turborepo-demo/'))
 
 // main
 const nextConfig = {
