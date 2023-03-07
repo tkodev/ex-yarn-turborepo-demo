@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo run dev --filter=@ex-yarn-turborepo-demo/next-js",
+    "dev": "turbo run dev",
     "build": "turbo run build",
     "start": "turbo run start",
     "test": "turbo run test",
