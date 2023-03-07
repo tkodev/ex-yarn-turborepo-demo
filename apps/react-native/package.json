@@ -1,5 +1,5 @@
 {
-  "name": "@ex-turborepo-demo/mobile-rn",
+  "name": "@ex-yarn-turborepo-demo/react-native",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,10 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@ex-turborepo-demo/dep-1": "workspace:^",
-    "@ex-turborepo-demo/utils": "workspace:^",
-    "react": "18.1.0",
-    "react-native": "0.70.3"
+    "@ex-yarn-turborepo-demo/dep-1": "workspace:*",
+    "@ex-yarn-turborepo-demo/utils": "workspace:*",
+    "react": "^18.1.0",
+    "react-native": "^0.70.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -31,9 +31,9 @@
     "babel-jest": "^26.6.3",
     "eslint": "^7.32.0",
     "jest": "^26.6.3",
-    "metro-react-native-babel-preset": "0.72.3",
-    "react-test-renderer": "18.1.0",
-    "typescript": "4.8.4"
+    "metro-react-native-babel-preset": "^0.72.3",
+    "react-test-renderer": "^18.1.0",
+    "typescript": "^4.8.4"
   },
   "jest": {
     "preset": "react-native",

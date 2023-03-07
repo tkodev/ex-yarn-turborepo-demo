@@ -1,4 +1,4 @@
-# ex-turborepo-demo
+# ex-yarn-turborepo-demo
 
 ## Requirements
 - IOS Development
@@ -16,34 +16,5 @@
   - `yarn test` to run all tests
   - `yarn lint` to lint all packages
 
-## Steps to replicate this repo
-1. Add yarn tooling
-  - Init repo using `yarn init -2`
-  - Remove `./yarn/caches` from `.gitignore`, add basic node ignored files
-  - Add `.yarnrc.yaml` values with hoisting limits
-  - Update `package.json` with `"version": "0.0.0"`, `"private": true`, `"workspace: [...]"` and namespaced package `name: "@ex-turborepo-demo/..."`
-  - Add `apps`, `configs` and `packages` folders
-  - Run `yarn` to test
-2. Add turborepo tooling
-  - Add `turbo` to dev deps using `yarn add -D turbo`
-  - Add common scripts to root `package.json`
-  - Add `turbo.json` to configure script behaviour
-3. Add apps
-  - Add a typescript next.js app `(cd apps && npx create-next-app@latest --ts web-next)`
-  - Add a typescript react native app `(cd apps && npx react-native init mobile-rn --template react-native-template-typescript)`
-  - Configure each app's `package.json` with `"version": "0.0.0"`, `"private": true`, and namespaced package `name: "@ex-turborepo-demo/..."`
-  - Add common scripts to each app's `package.json`
-  - Add cocoapods install steps to `mobile-rn`'s `postinstall` script
-  - Remove each app's `.git` folders using `rm -rf ./apps/*/.git` in root directory
-  - Run `yarn` in root directory to install deps
-4. Add shared module
-  - Init a new yarn package in `packages/utils`
-  - Add `typescript@4.8.4` dev dep and a `tsconfig.json` for ts support, `web-next`'s is a good base
-  - Add your code
-  - Run `yarn` in root directory to install deps
-  - Add your new package to apps that need it using `yarn workspace @ex-turborepo-demo/<target> add @ex-turborepo-demo/utils`
-5. Add transpilation support for modules outside of app directories
-  - Despite workspace hoisting limits, local packages are stored as `symlinks` in `node_modules`.
-    - `next` and `react-native` doesn't transpile packages outside of their app dirs.
-  - Configure `web-next`'s `next.config.js` to watch and transpile specific modules in monorepo
-  - Configure `mobile-rn`'s `metro.config.js` to watch and transpile modules in monorepo
+## Resources
+- Walkthrough blog post: https://www.notion.so/qmo/Creating-a-Monorepo-with-Turborepo-for-React-Native-and-Next-JS-5c7bacce36c3491faadc09e15866dd39?pvs=4

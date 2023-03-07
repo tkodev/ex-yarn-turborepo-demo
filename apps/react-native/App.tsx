@@ -26,7 +26,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {formatName} from '@ex-turborepo-demo/utils';
+import {formatName} from '@ex-yarn-turborepo-demo/utils';
 
 const Section: React.FC<
   PropsWithChildren<{

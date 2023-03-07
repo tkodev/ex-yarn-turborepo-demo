@@ -1,1 +1,1 @@
-import '@ex-turborepo-demo/dep-2'
+import '@ex-yarn-turborepo-demo/dep-2'

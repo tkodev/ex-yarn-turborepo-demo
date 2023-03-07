@@ -1,5 +1,5 @@
 {
-  "name": "@ex-turborepo-demo/dep-2",
+  "name": "@ex-yarn-turborepo-demo/dep-2",
   "version": "0.0.0",
   "private": true,
   "main": "./index.ts",
@@ -7,7 +7,7 @@
     "build": "echo 'building dep-2'"
   },
   "dependencies": {
-    "@ex-turborepo-demo/dep-3": "workspace:^"
+    "@ex-yarn-turborepo-demo/dep-3": "workspace:*"
   },
   "devDependencies": {
     "typescript": "4.8.4"

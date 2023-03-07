@@ -1,5 +1,5 @@
 {
-  "name": "@ex-turborepo-demo/root",
+  "name": "@ex-yarn-turborepo-demo/root",
   "version": "0.0.0",
   "private": true,
   "packageManager": "yarn@3.2.4",
@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --filter=@ex-yarn-turborepo-demo/next-js",
     "build": "turbo run build",
     "start": "turbo run start",
     "test": "turbo run test",

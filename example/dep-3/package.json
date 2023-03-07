@@ -1,5 +1,5 @@
 {
-  "name": "@ex-turborepo-demo/dep-3",
+  "name": "@ex-yarn-turborepo-demo/dep-3",
   "version": "0.0.0",
   "private": true,
   "main": "./index.ts",
